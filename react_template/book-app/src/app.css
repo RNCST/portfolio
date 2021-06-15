@@ -6,6 +6,8 @@ button {
 
 .book {
   font-size: 2.5rem;
+  padding: 0.5em;
+  list-style: none;
 }
 
 .book-count {
@@ -17,7 +19,7 @@ button {
   line-height: 2.5rem;
   margin-left: 0.2em;
   margin-right: 0.5em;
-  background-color: cyan;
+  background-color: orange;
   border-radius: 50%;
   color: white;
 }
@@ -28,14 +30,13 @@ button {
   background-color: transparent;
 }
 
-.book-button-hover {
+.book-button:hover {
   opacity: 0.8;
 }
 
-.book-increase {
+.book-increase, .book-decrease {
   color: green;
 }
-
-.book-decrease {
-  color: red;
+.book-zero {
+  color: darkred;
 }
