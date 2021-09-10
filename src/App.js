@@ -39,30 +39,29 @@ class App extends Component {
 
   render() {
     console.log('App render');
-    let selectedItem = this.props.selectItem;
-    switch (seleectedItem){
-      case(0):{
+    // let selectedItem = this.props.selectItem;
+    // switch (selectedItem){
+    //   case(0):{
 
-        break;
-      };
-      case(1):{
+    //     break;
+    //   };
+    //   case(1):{
 
-        break;
-      } 
-      case(3):{
+    //     break;
+    //   } 
+    //   case(3):{
 
-        break;
-      }
-      default:{
-        return;
-      }
+    //     break;
+    //   }
+    //   default:{
+    //     return;
+    //   }
 
-    }
+    // }
 
     return (
       <div className='App'>
         <Header>
-
 
         </Header>
 
@@ -70,17 +69,16 @@ class App extends Component {
         <Main>
           <SideBar>
 
-
           </SideBar>
         </Main>
 
         <Footer>
 
-
         </Footer>
 
       </div>
     );
+
   }
 }
 
