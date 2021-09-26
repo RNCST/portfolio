@@ -1,0 +1,117 @@
+/* COMMON */
+
+body {
+  color: #333;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.4;
+  font-family: 'Block Han Sans', sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+.inner {
+    width: 1100px;
+    margin: auto;
+    position: relative;
+}
+
+.btn {
+  width: 130px;
+  padding: 10px;
+  border: 2px solid #529AC7;
+  border-radius: 4px;
+  color: #529AC7;
+  font-size: 16px;
+  font-weight: 700;
+  text-align:center;
+  cursor: pointer;
+  box-sizing: border-box;
+  display: block;
+  transition: .4s;
+}
+.btn:hover {
+  background-color: #3C7293;
+  color:#3C7293;
+}
+
+
+#to-top{
+  width: 42px;
+  height: 42px;
+  background-color: #529AC7;
+  color: #fff;
+  border: 2px solid #fff;
+  border-radius: 10px;
+  cursor:pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  bottom:30px;
+  right:30px;
+  z-index: 9;
+}
+
+
+/* HEADER */
+
+header {
+  width: 100%;
+  background-color: #333;
+  border-bottom: 1px solid #fff;
+  position: fixed;
+  top: 0;
+  z-index:9;
+}
+
+header .sub-menu{
+  position: absolute;
+  top:10px;
+  right: 0 ;
+  display: flex;
+}
+
+header .sub-menu ul.menu{
+  display:flex;
+}
+
+header .sub-menu ul.menu li {
+  position: relative;
+}
+
+header .sub-menu ul.menu li::before {
+
+  content:"";
+
+  width: 1px;
+  height: 12px;
+  background-color: #fff;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+}
+
+header .sub-menu ul.menu li:first-child::before{
+  /* 첫번쨰 요소 에는 구분선이 필요가 없음. */
+  display:none;
+}
+
+header .sub-menu ul.menu li a {
+  font-size:22px;
+  padding: 11px 16px;
+  background-color: #529AC7;
+  display:block;
+  color:#fff;
+  transition: background-color .4s;
+}
+
+header .sub-menu ul.menu li a:hover {
+  color:#3C7293
+
+}
+
+
