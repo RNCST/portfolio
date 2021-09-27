@@ -363,3 +363,99 @@ section.summary{
   padding-left:20px;
 }
 
+
+.projects {
+  position: relative;
+  margin:180px auto 2rem;
+  width: 100%;
+  max-width: 71.25rem;
+  padding: 4rem 2rem;
+  margin: 2 0 0 auto;
+  height: auto;
+  background-color: #FF9D1B;
+}
+
+.projects .project_title{
+  font-family: Black Han Sans,sans-serif;
+  color: #fff;
+  padding: 45px 0 30px 0 ;
+  font-weight: 200;
+  font-size: 3rem;
+  text-align: center;
+  word-break: kiip-all;
+  border-bottom: .01rem solid #fff;
+}
+
+.projects .project_containor {
+  display:flex;
+  flex-flow: column wrap;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  font-family: Noto Sans KR,sans-serif;
+}
+
+.projects .project_containor .project_box{
+  
+  flex-shrink: 0;
+  width: 70%;
+  padding: 1.5rem;
+  margin: 35px;
+  border-radius: 0.7rem;
+  background-color: #fff;
+  margin-bottom: 0;
+  box-shadow: 1rem 1rem 1rem 0 rgb(255 255 255   / 0%);
+}
+
+.projects .project_containor .project_box .project_box_title{
+  text-align: center;
+  font-weight: 700;
+  font-size: 2.0rem;
+  color: #56585C;
+}
+
+.projects .project_containor .project_box .project_box_subtitle{
+  text-align: center;
+  padding-bottom: .5rem;
+  margin-bottom: 1.5rem;
+  border-bottom: 1px solid #ccc;
+  font-weight: 700;
+  font-size: 1.2rem;
+  color: #9CA0A8;
+}
+
+.projects .project_containor .project_box .project_box_des{
+  display:flex;
+  flex-flow: column wrap;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.projects .project_containor .project_box .project_box_des_left {
+  width: 45%;
+}
+
+.projects .project_containor .project_box .project_box_des_right {
+  width: 45%;
+  height: auto;
+}
+
+.projects .project_containor .project_box .project_box_des_right .project_box_des_right_info{
+  border-top: 1px solid #9CA0A8;
+}
+
+.projects .project_containor .project_box .project_box_des_right .project_box_des_right_info .info_key{
+  display: inline-block;
+  vertical-align: top;
+  width: 6.4rem;
+  font-weight: 900;
+  font-size: 1.2rem;
+}
+.projects .project_containor .project_box .project_box_des_right .project_box_des_right_info .info_value{
+  display: inline-block;
+  vertical-align: bottom;
+  width: calc(100% - 8.4rem);
+  font-weight: 400;
+  font-size: 1rem;
+}
