@@ -8,5 +8,5 @@
 [Repository](https://github.com/RNCST/portfolio)
 
 
-ing....
+21.09.28 1.0.0 HTML5-CSS3-JS , LODASH , GSAP 이용
 
