@@ -1,7 +1,7 @@
 /* COMMON */
 
 body {
-  background-color: #529AC7;
+  background-color: #fff;
   color: #333;
   font-size: 16px;
   font-weight: 400;
@@ -11,6 +11,10 @@ body {
 
 a {
   text-decoration: none;
+}
+
+.summary p{
+  margin-bottom:9px;
 }
 
 .inner {
@@ -80,7 +84,17 @@ a {
 
 header {
   width: 100%;
-  background-color: #333;
+  background-color: #529AC7;
+  border-bottom: 1px solid #fff;
+  position: fixed;
+  top: 0;
+  z-index:9;
+  box-shadow: 10px 5px 5px 5px rgba(255, 255, 255, .2);
+}
+
+header.moved {
+  width: 100%;
+  background-color: #fff;
   border-bottom: 1px solid #fff;
   position: fixed;
   top: 0;
@@ -89,29 +103,45 @@ header {
 
 header > .inner {
   height: 100px;
+  margin: auto;
+  
 }
 
 header .maintitle {
   position:absolute;
   top:10px;
-  color: #DBD7D4;
+  color: #fff;
   padding: 40px;
   font-size:35px;
   font-weight: 800;
   padding: 11px 16px;
-  background-color: #529AC7;
+  transition: color .4s;
+}
+
+header .maintitle.moved {
+  position:absolute;
+  top:10px;
+  color: #333;
+  padding: 40px;
+  font-size:35px;
+  font-weight: 800;
+  padding: 11px 16px;
   transition: color .4s;
 }
 
 
 header .maintitle:hover {
-  color: #fff
+  color: #3C7293
+}
+
+header .maintitle.moved:hover {
+  color: #A7A7A7
 }
 
 header .sub-menu{
   position: absolute;
   top:25px;
-  right: 10px ;
+  right:-100px;
   display: flex;
 }
 
@@ -140,12 +170,18 @@ header .sub-menu ul.menu li:first-child::before{
   display:none;
 }
 
-header .sub-menu ul.menu li a {
+header .sub-menu ul.menu a {
   font-size:22px;
   padding: 11px 16px;
-  background-color: #529AC7;
   display:block;
   color:#fff;
+  transition: color .4s;
+}
+header .sub-menu ul.menu a.moved {
+  font-size:22px;
+  padding: 11px 16px;
+  display:block;
+  color:#333;
   transition: color .4s;
 }
 
@@ -153,21 +189,23 @@ header .sub-menu ul.menu li a:hover {
   color:#3C7293;
   transition: color .4s;
 }
-section.summary{
-  background-color: #529AC7;
+
+header .sub-menu ul.menu li a.moved:hover {
+  color:#A7A7A7;
+  transition: color .4s;
 }
 .summary {
-  position: relative;
+  position :relative;
+  /* max-width: 71.25rem; */
   background-color: #529AC7;
-  margin:180px auto 2rem;
+  position: relative;
+  margin:100px auto 0;
   text-align: center;
+  width: 100%;
 }
 
 .summary .btn {
-  position:absolute;
-  left:0;
-  right:0;
-  margin: auto;
+  margin: 0 auto 10px auto ;
 }
 
 .summary .summary_Header {
@@ -192,9 +230,9 @@ section.summary{
 .aboutme {
   position: relative;
   background-color: #fff;
-  margin:180px auto 2rem;
+  margin:0 auto 2rem;
   width: 100%;
-  max-width: 71.25rem;
+  /* max-width: 71.25rem; */
   padding: 4rem 2rem;
   margin: 2 0 0 auto;
 }
@@ -250,9 +288,9 @@ section.summary{
 
 .skillinventory {
   position: relative;
-  margin:180px auto 2rem;
+  margin:0 auto 0;
   width: 100%;
-  max-width: 71.25rem;
+  /* max-width: 71.25rem; */
   padding: 4rem 2rem;
   margin: 2 0 0 auto;
   height: 70rem;
@@ -308,9 +346,9 @@ section.summary{
 
 .archive {
   position: relative;
-  margin:180px auto 2rem;
+  margin:0 auto 0;
   width: 100%;
-  max-width: 71.25rem;
+  /* max-width: 71.25rem; */
   padding: 4rem 2rem;
   margin: 2 0 0 auto;
   height: 35rem;
@@ -380,9 +418,9 @@ section.summary{
 
 .projects {
   position: relative;
-  margin:180px auto 2rem;
+  margin:0 auto 0;
   width: 100%;
-  max-width: 71.25rem;
+  /* max-width: 71.25rem; */
   padding: 4rem 2rem;
   margin: 2 0 0 auto;
   height: auto;
@@ -478,9 +516,9 @@ section.summary{
 
 .history {
   position: relative;
-  margin:180px auto 2rem;
+  margin:0 auto 0;
   width: 100%;
-  max-width: 71.25rem;
+  /* max-width: 71.25rem; */
   padding: 4rem 2rem;
   margin: 2 0 0 auto;
   height: auto;
@@ -549,4 +587,25 @@ section.summary{
 .history .history_containor .history_rightside .history_right_des{
   padding-bottom: 1rem;
   border-bottom: 1px solid #c2c2c2;
+}
+
+footer {
+  background-color: #333;
+  height: 8rem;
+  text-align: center;
+  padding-top: 3rem;
+}
+
+footer .footer_icons{
+  margin: 0 0 1rem 0 ;
+}
+footer .footer_icons .footer_icon{
+  position: relative;
+  display: inline-block;
+  width: 3rem;
+  height: 3rem;
+  padding: 2px;
+  margin: 0.5rem;
+  border-radius: 2rem;
+  cursor:pointer;
 }

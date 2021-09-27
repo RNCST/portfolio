@@ -42,31 +42,35 @@
 
     <link rel="stylesheet" href="./css/main.css" />
 
-    <script src="./js/main.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.21/lodash.min.js" integrity="sha512-WFN04846sdKMIP5LKNphMaWzU7YpMyCU245etK3g/2ARYbPK9Ub18eG+ljU96qKRCWh+quCY7yefSmlkQw1ANQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- Lodash js.. .throttle method -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/gsap.min.js" integrity="sha512-UxP+UhJaGRWuMG2YC6LPWYpFQnsSgnor0VUF3BHdD83PS/pOpN+FYbZmrYN+ISX8jnvgVUciqP/fILOXDjZSwg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/ScrollToPlugin.min.js" integrity="sha512-1OG9UO4krPizjtz/c9iDbjCqtXznBYdJeD4ccPaYfJHzC6F1qoQ3P1bgQ3J8lgCoK5qGVCqsY4+/RKjLDzITVQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- gsap js animation library -->
+
+
+    <script defer src="./js/main.js"></script>
   </head>
   <body>
     <!-- HEADER -->
-    <header>
+    <header id="Header">
       <div class="inner">
         <a href="/index.html" class="maintitle"> Osh's portfolio </a>
         <div class="sub-menu">
           <ul class="menu">
-            <li>
-              <a href="javascript:void(0)">Summary</a>
-            </li>
-            <li>
+            <li id="AboutMe">
               <a href="javascript:void(0)">AboutMe</a>
             </li>
-            <li>
+            <li id="SkillInventory">
               <a href="javascript:void(0)">SkillInventory</a>
             </li>
-            <li>
+            <li id="Archive">
               <a href="javascript:void(0)">Archive</a>
             </li>
-            <li>
+            <li id="Projects">
               <a href="javascript:void(0)">Projects</a>
             </li>
-            <li>
+            <li id="History">
               <a href="javascript:void(0)">History</a>
             </li>
           </ul>
@@ -82,16 +86,18 @@
           <br />
         </div>
         <div class="summary_description">
-          안녕하세요. 반갑습니다. <br />
-          지금에 안주하지않고 끝없이 발전하려고 합니다.<br />
-          프론트에서부터 시작해 풀스택까지 달려나가고싶습니다.<br />
+          <br>
+          <p>안녕하세요. 웹 개발자가 되고 싶은 오세현입니다.</p>
+          <p>지금에 안주하지않고 끝없이 발전하려고 합니다.</p>
+          <p>프론트에서부터 시작해 풀스택까지 달려나가고싶습니다.</p>
         </div>
-        <button class="btn">더 알아보기 ↓</button>
+        <button class="btn" id="see_more">더 알아보기 ↓</button>
+        <br>
       </div>
     </section>
 
     <!-- ABOUTME SECTION -->
-    <section class="aboutme">
+    <section class="aboutme" id="AboutMe_section">
       <div class="inner">
         <div class="aboutme_header">ABOUT ME</div>
         <div class="aboutme_description">
@@ -113,7 +119,7 @@
 
             <div class="info_wraper">
               <div class="info_title">연락처</div>
-              <div class="info_des">010-3490-0928</div>
+              <div class="info_des">+82 10-3490-0928</div>
             </div>
 
             <div class="info_wraper">
@@ -131,7 +137,7 @@
     </section>
 
     <!-- SKILLINVENTORY SECTION -->
-    <section class="skillinventory">
+    <section class="skillinventory" id="skillinventory_section">
       <div class="inner">
         <div class="skillinventory_title">Skill Inventory</div>
         <div class="skillinventory_container">
@@ -261,7 +267,7 @@
     </section>
 
     <!-- ARCHIVE SECTION -->
-    <section class="archive">
+    <section class="archive" id="archive_section">
       <div class="inner">
         <div class="archive_title">Archive</div>
         <div class="archive_containor">
@@ -307,7 +313,7 @@
     </section>
 
     <!-- PROJECTS SECTION -->
-    <section class="projects">
+    <section class="projects" id="projects_section">
       <div class="inner">
         <div class="project">
           <div class="project_title">Projects</div>
@@ -519,7 +525,7 @@
     </section>
 
     <!-- HISTORY SECTION -->
-    <section class="history">
+    <section class="history" id="history_section">
       <div class="inner">
         <div class="history_title">History</div>
         <div class="history_containor">
@@ -546,7 +552,7 @@
               <div class="history_right_containor">
                 <div class="history_right_title">한국 소프트웨어 인재개발원 교육</div>
                 <div class="history_right_subtitle">웹 및 모바일 스마트융합 응용sw엔지니어과정</div>
-                <div class="history_right_subtitle">21.02.03 ~ 21.08.04</div>
+                <div class="history_right_subtitle">21.02 ~ 21.08</div>
                 <div class="history_right_des">
                   <p>한국 소프트웨어 인재개발원(kosmo) 에서 6개월간의 자바 교육을 받았습니다.</p>
                   <p>Java를 기본으로 기본적인 CS지식과 OOP사상에 대해 학습하고
@@ -603,7 +609,25 @@
 
     <!-- FOOTER -->
     <footer>
-      <div class="inner">footer</div>
+      <div class="inner">
+        <div class="footer_icons">
+          <a class="footer_icon" href="https://github.com/RNCST" target="_blank">
+            <img src="https://symbols.getvecta.com/stencil_65/6_github.f5b2488e9f.svg" alt="">
+          </a>
+          <a class="footer_icon" href="https://rncst.github.io/" target="_blank">
+            <img src="./images/blog.png" width="53px">
+          </a>
+          <a class="footer_icon" href="https://www.instagram.com/ddbbosh/" target="_blank">
+            <img src="./images//instagram.png" width="50px">
+          </a>
+          <a class="footer_icon" href="mailto:rk51320928@gmail.com">
+            <img src="./images/email.png"  width="50px">
+          </a>
+        </div>
+        <div class="footer_des">
+          <span id="date"></span>
+        </div>
+      </div>
     </footer>
 
     <!-- to top button -->
