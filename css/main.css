@@ -19,8 +19,15 @@ a {
     margin: auto;
     position: relative;
 }
+
 .textmiddle {
   vertical-align: super;
+}
+
+.roundimg{
+  width: 100%;
+  height:100%;
+  object-fit: cover;
 }
 
 .btn {
@@ -59,6 +66,13 @@ a {
   bottom:30px;
   right:30px;
   z-index: 9;
+}
+
+
+#to-top:hover{
+  background-color: #fff;
+  color:#529AC7;
+  transition:.3s;
 }
 
 
@@ -458,4 +472,81 @@ section.summary{
   width: calc(100% - 8.4rem);
   font-weight: 400;
   font-size: 1rem;
+}
+
+
+
+.history {
+  position: relative;
+  margin:180px auto 2rem;
+  width: 100%;
+  max-width: 71.25rem;
+  padding: 4rem 2rem;
+  margin: 2 0 0 auto;
+  height: auto;
+  background-color: #BDE7FC;
+}
+
+.history .history_title{
+  font-family: Black Han Sans,sans-serif;
+  color: #fff;
+  padding: 45px 0 30px 0 ;
+  font-weight: 200;
+  font-size: 3rem;
+  text-align: center;
+  word-break: kiip-all;
+  border-bottom: .01rem solid #fff;
+}
+
+.history .history_containor{
+}
+
+.history .history_containor .history_box{
+  padding-top: 30px;
+  display:flex;
+  flex-flow: column wrap;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  font-family: Noto Sans KR,sans-serif;
+}
+
+.history .history_containor .history_leftside{
+  border-right: #c2c2c2 solid 1px;
+  padding-right: 0rem;
+  border-right: 1px ;
+  width:15%
+
+}
+
+.history .history_containor .history_leftside .profile_logo{
+  overflow: hidden;
+  width: 15rem;
+  height: 15rem;
+  border: 1px solid #ccc;
+  border-radius: 4rem;
+}
+
+.history .history_containor .history_rightside{
+  border-left: #c2c2c2 solid 1px;
+  padding-left: 20px;
+  width:50%
+}
+
+.history .history_containor .history_rightside .history_right_title{
+  font-weight: 900;
+  font-size: 1.5rem;
+  padding-bottom: 1rem;
+}
+
+.history .history_containor .history_rightside .history_right_subtitle{
+  font-weight: 400;
+  font-size: 1.1rem;
+  color: #9CA0A8;
+  padding-bottom: 1rem;
+}
+
+.history .history_containor .history_rightside .history_right_des{
+  padding-bottom: 1rem;
+  border-bottom: 1px solid #c2c2c2;
 }

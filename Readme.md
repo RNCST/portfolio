@@ -3,7 +3,7 @@
 
 ## 🎯 Links (DEMO / Github Repository)
 
-[DEMO]( https://rncst.github.io/portfolio/)
+[DEMO](https://rncstportfolio.netlify.app/)
 
 [Repository](https://github.com/RNCST/portfolio)
 
